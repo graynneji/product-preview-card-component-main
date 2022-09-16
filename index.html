@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Inter sans-serif;
+        background-color: antiquewhite;
+        color: #444;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .container {
+        display: flex;
+        width: 700px;
+        margin: 50px auto;
+        align-items: center;
+        justify-content: center;
+      }
+      .image {
+        width: 350px;
+        height: 500px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .product-details {
+        width: 350px;
+        background-color: white;
+        padding: 32px;
+        height: 500px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      h1 {
+        margin-bottom: 32px;
+        font-size: 44px;
+
+        font-weight: 700;
+      }
+      .icon {
+        stroke: #fff;
+        height: 24px;
+        width: 24px;
+      }
+      h3 {
+        color: rgba(68, 68, 68, 0.594);
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-bottom: 10px;
+        letter-spacing: 5px;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+
+        gap: 24px;
+        margin-bottom: 30px;
+      }
+      .btn {
+        color: white;
+        padding: 12px 96px;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        background-color: #087f5b;
+        border: none;
+      }
+      .btn:hover {
+        color: white;
+        padding: 12px 96px;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        background-color: #087f5be0;
+        border: none;
+        cursor: pointer;
+      }
+      span {
+        font-size: 40px;
+        color: #087f5b;
+        font-weight: 300;
+        font-weight: 700;
+      }
+      .text {
+        line-height: 1.5;
+        font-size: 16px;
+        margin-bottom: 30px;
+        color: rgba(68, 68, 68, 0.742);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <figure class="container">
+        <img src="images/image-product-desktop.jpg" class="image" />
+
+        <div class="product-details">
+          <h3>Perfume</h3>
+          <h1>Gabrielle Essence Eau De Parfum</h1>
+          <p class="text">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price">
+            <span> $149.99</span>
+            <p>$169.99</p>
+          </div>
+          <button class="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+            Add to Cart
+          </button>
+        </div>
+      </figure>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ukaegbu Gray Nneji</a>.
+    </div>
+  </body>
+</html>
